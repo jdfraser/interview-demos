@@ -63,12 +63,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConcreteStatService.cs" />
-    <Compile Include="IDbManager.cs" />
-    <Compile Include="IStatService.cs" />
+    <Compile Include="Data\ConcreteStatService.cs" />
+    <Compile Include="Data\IDbManager.cs" />
+    <Compile Include="Data\IStatService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SqliteDbManager.cs" />
+    <Compile Include="Data\SqliteDbManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -77,6 +77,7 @@
     </None>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\System.Data.SQLite.Core.1.0.108.0\build\net45\System.Data.SQLite.Core.targets" Condition="Exists('packages\System.Data.SQLite.Core.1.0.108.0\build\net45\System.Data.SQLite.Core.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
