@@ -63,6 +63,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CountryPopulationApp.cs" />
     <Compile Include="Data\ConcreteStatService.cs" />
     <Compile Include="Data\CountryRepository.cs" />
     <Compile Include="Data\IDbManager.cs" />
